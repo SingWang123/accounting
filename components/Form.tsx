@@ -3,7 +3,7 @@ import React from "react";
 import { useContext,useState } from "react";
 import { AccountingContext } from "../context/AccountingContext";
 
-export default function Form(){
+export const Form = () =>{
     const {accountingRecord,setAccountingRecord} = useContext(AccountingContext);
     const [type,setType] = useState("收入");
     const [money,setMoney] = useState("");

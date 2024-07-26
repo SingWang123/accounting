@@ -4,5 +4,5 @@
 
 ### * React
 ### * Typescript
-### * Node.js
+### * Next.js
 
