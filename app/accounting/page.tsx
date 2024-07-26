@@ -2,7 +2,7 @@ import React from 'react';
 import { Form } from '../../components/Form';
 import { List } from '../../components/List';
 
-const AccountingPage: React.FC = () => {
+export default function AccountingPage() {
   return (
     <div className = "index">
         <Form/>
@@ -10,5 +10,3 @@ const AccountingPage: React.FC = () => {
     </div>
   );
 };
-
-export default AccountingPage;
