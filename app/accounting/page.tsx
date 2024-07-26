@@ -7,7 +7,6 @@ export default function AccountingPage() {
     <div className = "index">
         <Form />
         <List />
-        happy happy
     </div>
   );
 };
