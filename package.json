@@ -9,14 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@types/node": "^16.0.1",
+    "@types/react": "^17.0.15",
     "next": "latest",
     "react": "latest",
-    "react-dom": "latest",
-    "typescript": "^4.3.5",
-    "@types/react": "^17.0.15",
-    "@types/node": "^16.0.1"
+    "react-dom": "latest"
   },
   "engines": {
     "node": ">=14.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4"
   }
 }
