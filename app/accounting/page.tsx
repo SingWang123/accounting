@@ -5,8 +5,9 @@ import { List } from '../components/List';
 export default function AccountingPage() {
   return (
     <div className = "index">
-        <Form />
-        <List />
+        {/* <Form />
+        <List /> */}
+        happy happy
     </div>
   );
 };
