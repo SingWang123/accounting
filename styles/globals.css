@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-decoration: none;
+    user-select: none;       /*關閉點擊效果*/
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+    background-color: transparent;
+    color: inherit;
+    outline: none;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  
+  .index {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    border: #EAEAEA 2px solid;
+  }
+  
+  .index__title{
+    height: 100px;
+    line-height: 100px;
+    background-color: rgba(34,51,68);
+    color:#ededed;
+    font-size: 28px;
+    font-weight: 800;
+  }
+  
+  .index__content{
+    height: 240px;
+    line-height: 240px;
+    background-color: #ccddee;
+    color:#343538;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  
+  .index__button_bg{
+    height: 400px;
+    background-color: #ffffff;
+    margin: 30px 0px;
+  }
+  
+  .form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    line-height: 100px;
+    border-bottom: #EAEAEA 1px solid;
+  }
+  
+  .form__type{
+    margin: 2px;
+    height: 36px;
+    font-size: 16px;
+  }
+  
+  .form__input{
+    margin: 2px;
+    height: 30px;
+    font-size: 16px;
+  }
+  
+  .account__list{
+    height: 640px;
+  }
+  
+  .list{
+    display: flex;
+    justify-content: space-around;
+    max-width: 600px;
+    height: 30px;
+    margin: 10px auto;
+  }
+  
+  .list__money{
+    width: 50px;
+    margin: 10px;
+    font-size: 18px;
+  }
+  
+  .list__reason{
+    width: 350px;
+    font-size: 18px;
+    text-align: left;
+    margin: 10px;
+  }
+  
+  .list__total{
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 20px auto;
+  }

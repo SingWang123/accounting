@@ -4,8 +4,5 @@
 
 ### * React
 ### * Typescript
-### * Single Page Appliction
+### * Node.js
 
-```powershell
-npx create-react-app accounting --template typescript
-```
