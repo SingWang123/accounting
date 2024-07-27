@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { PropsWithChildren } from 'react';
 import '../styles/globals.css';
-import { AccountingContext, AccountingRecord } from './context/AccountingContext';
+import { AccountingContext, AccountingRecord } from '../context/AccountingContext';
 
 const Layout: React.FC<PropsWithChildren<{}>> = ({ children }) => {
   const [accountingRecord,setAccountingRecord] = useState<AccountingRecord[]>([]);

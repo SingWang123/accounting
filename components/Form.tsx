@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { useContext,useState } from "react";
-import { AccountingContext } from "../app/context/AccountingContext";
+import { AccountingContext } from "../context/AccountingContext";
 
 export const Form = () =>{
     const {accountingRecord,setAccountingRecord} = useContext(AccountingContext);

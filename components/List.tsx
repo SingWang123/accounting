@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { useContext} from "react";
-import { AccountingContext } from "../app/context/AccountingContext";
+import { AccountingContext } from "../context/AccountingContext";
 import Link from "next/link";
 
 export const List = () =>{
