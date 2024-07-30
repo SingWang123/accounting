@@ -1,27 +1,21 @@
 "use client";
 import React from "react";
-import { useContext,useState } from "react";
-import { AccountingContext } from "../context/AccountingContext";
+import { useState } from "react";
+import { useAuth, writeUserData } from "../lib/firebase.";
 
 export const Form = () =>{
-    const {accountingRecord,setAccountingRecord} = useContext(AccountingContext);
     const [type,setType] = useState("收入");
     const [money,setMoney] = useState("");
     const [reason,setReason] = useState("");
+    const {user,loading} = useAuth();
 
     const handleAccounting = () => {
         if (money.trim() === "") {
             alert("請輸入金額");
             return;
         }
-        setAccountingRecord(prevRecords => [
-            ...prevRecords,
-            {
-                type: type,
-                money: Number(money),
-                reason: reason
-            }
-        ]);
+
+        writeUserData(type, Number(money), reason ,user?.uid);
     };
 
     const handleMoneyChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -34,6 +28,7 @@ export const Form = () =>{
 
     return(
         <div className = "form">
+            <div className = "form__user">您已經使用{user?.email}登入</div>
             <select 
                 value = {type} 
                 onChange = {(e) => setType(e.target.value)}
@@ -51,7 +46,7 @@ export const Form = () =>{
             <input 
                 value = {reason} 
                 onChange = {(e) => setReason(e.target.value)}
-                placeholder = "請輸入來源"
+                placeholder = "請輸入說明"
                 className = "form__input"
             ></input>
             <button 

@@ -12,6 +12,7 @@
   "dependencies": {
     "@types/node": "^16.0.1",
     "@types/react": "^17.0.15",
+    "firebase": "^10.12.4",
     "next": "latest",
     "react": "latest",
     "react-dom": "latest"

@@ -38,30 +38,46 @@ body {
   }
   
   .index__content{
-    height: 240px;
-    line-height: 240px;
-    background-color: #ccddee;
     color:#343538;
     font-size: 24px;
     font-weight: 600;
+    margin: 30px 0px;
   }
   
   .index__button_bg{
-    height: 400px;
     background-color: #ffffff;
     margin: 30px 0px;
   }
+
+  .index__signup{
+    font-size: 24px;
+    font-weight: 600;
+    padding: 50px;
+  }
+
+  .signup__input{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px 0px;
+  }
+  
   
   .form{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    height: 120px;
-    line-height: 100px;
+    height: 140px;
     border-bottom: #EAEAEA 1px solid;
   }
   
+  .form__user{
+    font-size: 20px;
+    font-weight: 900;
+    /* padding: 20px 0px; */
+    width: 100%;
+  }
+
   .form__type{
     margin: 2px;
     height: 36px;
@@ -77,6 +93,8 @@ body {
   .account__list{
     height: 640px;
   }
+
+
   
   .list{
     display: flex;

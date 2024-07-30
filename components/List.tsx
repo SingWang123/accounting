@@ -1,16 +1,28 @@
 "use client";
 import React from "react";
-import { useContext} from "react";
+import { useContext, useEffect} from "react";
 import { AccountingContext } from "../context/AccountingContext";
+import { removeUserData,showAccountingData,useAuth } from "../lib/firebase.";
 import Link from "next/link";
 
 export const List = () =>{
     const {accountingRecord,setAccountingRecord} = useContext(AccountingContext);
+    const {user,loading} = useAuth()
 
-    const handleRemove = (index : number) => {
+    useEffect(() => {
+        if (user?.uid) {
+            showAccountingData(user.uid, (accountingData) => {
+                setAccountingRecord(accountingData || []);
+            });
+        }
+    }, [user?.uid, setAccountingRecord]);
+
+
+    const handleRemove = async(index : number) => {
         const newRecordList = accountingRecord.filter((_, i) => i !== index);
-        setAccountingRecord(newRecordList);
+        await removeUserData(user?.uid, index);
     };
+
 
     //計算總金額
     let totalMoney = 0
