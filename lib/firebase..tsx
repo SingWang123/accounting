@@ -29,9 +29,11 @@ export const registerUser = (email: string, password: string) =>{
     return createUserWithEmailAndPassword(auth,email,password)
         .then((userCredential) => {
             const user = userCredential.user;
+            console.log(user)
             return user;
         })
         .catch((error) => {
+            console.log(error)
             throw new Error(`Error ${error.Code}: ${error.Message}`)
         });
 
@@ -43,9 +45,11 @@ export const signinUser = (email: string, password: string) =>{
     return signInWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
             const user = userCredential.user;
+            console.log(user)
             return user;
         })
         .catch((error) => {
+            console.log(error)
             throw new Error(`Error ${error.Code}: ${error.Message}`)
         });
 }
