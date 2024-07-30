@@ -1,8 +1,7 @@
 import { initializeApp } from "firebase/app";
-import { Database, getDatabase, ref, set, onValue, push, update, get } from "firebase/database";
+import { Database, getDatabase, ref, set, onValue, get } from "firebase/database";
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged,signOut} from "firebase/auth";
 import { useState ,useEffect } from "react";
-import { AccountingContext, AccountingRecord } from "../context/AccountingContext";
 
 const firebaseConfig = {
   apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
