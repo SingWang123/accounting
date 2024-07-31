@@ -54,6 +54,7 @@ export const Signup = () => {
                     密碼
                 </label>
                 <input 
+                    type = "password"
                     value = {password} 
                     onChange = {(e) => setPassword(e.target.value)}
                     placeholder = "請輸入密碼"

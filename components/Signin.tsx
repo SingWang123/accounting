@@ -60,7 +60,8 @@ export const Signin = () => {
                             密碼
                         </label>
                         <input 
-                            value = {password} 
+                            value = {password}
+                            type = "password" 
                             onChange = {(e) => setPassword(e.target.value)}
                             placeholder = "請輸入密碼"
                             className = "form__input"
